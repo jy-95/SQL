@@ -1,0 +1,23 @@
+SQL> l
+  1  select
+  2  	employee_id as eno,
+  3  	last_name || ', ' || first_name as ename,
+  4  	email || '@scit.master' as email,
+  5  	-- salary*12 as year_sal,
+  6  	to_char(salary * 12, '$999,999') as year_sal
+  7   from employees
+  8* where salary*12 >=150000
+SQL> /
+
+  ENO ENAME                EMAIL                          YEAR_SAL                                                                                    
+----- -------------------- ------------------------------ ------------------                                                                          
+  100 King, Steven         SKING@scit.master               $288,000                                                                                   
+  101 Kochhar, Neena       NKOCHHAR@scit.master            $204,000                                                                                   
+  102 De Haan, Lex         LDEHAAN@scit.master             $204,000                                                                                   
+  145 Russell, John        JRUSSEL@scit.master             $168,000                                                                                   
+  146 Partners, Karen      KPARTNER@scit.master            $162,000                                                                                   
+  201 Hartstein, Michael   MHARTSTE@scit.master            $156,000                                                                                   
+
+6 rows selected.
+
+SQL> spool off

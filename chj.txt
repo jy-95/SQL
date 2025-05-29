@@ -1,0 +1,14 @@
+SQL> /
+
+  ENO ENAME                EMAIL                          YEAR_SAL                                                                                    
+----- -------------------- ------------------------------ ------------------                                                                          
+  100 King, Steven         SKING@scit.master               $288,000                                                                                   
+  101 Kochhar, Neena       NKOCHHAR@scit.master            $204,000                                                                                   
+  102 De Haan, Lex         LDEHAAN@scit.master             $204,000                                                                                   
+  145 Russell, John        JRUSSEL@scit.master             $168,000                                                                                   
+  146 Partners, Karen      KPARTNER@scit.master            $162,000                                                                                   
+  201 Hartstein, Michael   MHARTSTE@scit.master            $156,000                                                                                   
+
+6 rows selected.
+
+SQL> spool off

@@ -1,0 +1,11 @@
+select *
+from
+(select rownum as rw, eno, ename, sal
+from (select 
+	EMPLOYEE_ID as eno, 
+	first_name as ename, 
+	salary as sal
+from employees
+order by 3 desc))
+where rw between 17 and 37
+/
