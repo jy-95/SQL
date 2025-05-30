@@ -1,0 +1,1 @@
+select name from city where CountryCode='KOR' and Name like 'C%';
